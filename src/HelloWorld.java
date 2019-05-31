@@ -4,7 +4,6 @@ import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.MenuItem;
 import javafx.scene.shape.Box;
 import javafx.stage.Stage;
 import javafx.geometry.Pos;
@@ -20,6 +19,7 @@ import javafx.scene.shape.Shape;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
+import javafx.scene.shape.Line;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -36,33 +36,36 @@ public class HelloWorld extends Application {
 
     private Stage window;
     private StackPane layout;
-    private VBox vbox;
     private Text title;
+    private MenuBox startMenu;
 
     private Parent createContent() {
         layout = new StackPane();
-        layout.setPrefSize(900, 600);
+        layout.setPrefSize(500, 600);
+        // background for the game
+        Rectangle bg = new Rectangle();
+        bg.widthProperty().bind(layout.widthProperty());
+        bg.heightProperty().bind(layout.heightProperty());
 
-        Rectangle bg = new Rectangle(2000, 2000);
+        // creating menu
+        MenuItem exitButton = new MenuItem("EXIT");
+        exitButton.setOnMousePressed( event -> {
+            System.exit(0);
+                }
+        );
+        MenuItem play = new MenuItem("PLAY");
+        MenuItem controls = new MenuItem("CONTROLS");
+        startMenu = new MenuBox(play, controls, exitButton);
+        startMenu.setTranslateY(300);
 
-        Button itemExit = new Button("EXIT");
-        itemExit.
-        Button play = new Button("PLAY");
-        Button controls = new Button("CONTROLS");
+        //making the title
         title = new Text(50,100, "SPACE INVADERS");
         title.setFill(Color.LIGHTGREEN);
-        title.setFont(Font.font("Verdana", FontWeight.BOLD, 60));
+        title.setFont(Font.font("Verdana", FontWeight.BOLD, 50));
 
-
-        vbox = new VBox(8); // spacing = 8
-        vbox.getChildren().addAll(new Button("PLAY"), new Button("CONTROLS"), new Button("EXIT"));
-        vbox.setAlignment(Pos.CENTER);
-        vbox.setTranslateY(50);
-
-
-        layout.getChildren().addAll(bg,title, vbox);
+        layout.getChildren().addAll(bg,title, startMenu);
         layout.setAlignment(title, Pos.TOP_CENTER);
-        layout.setAlignment(vbox, Pos.CENTER);
+        layout.setAlignment(startMenu, Pos.CENTER);
         return layout;
     }
 
@@ -73,6 +76,61 @@ public class HelloWorld extends Application {
         window.setScene(scene);
         window.show();
     }
+
+    // Credit to https://github.com/Siderim for the inspiration for the menu
+
+    private static class MenuBox extends VBox {
+        private MenuBox(MenuItem... items) {
+            getChildren().add(createSeparator());
+
+            for (MenuItem item : items) {
+                getChildren().addAll(item, createSeparator());
+            }
+
+        }
+
+        private Line createSeparator() {
+            Line sep = new Line();
+            sep.setEndX(210);
+            sep.setStroke(Color.DARKGREY);
+            return sep;
+        }
+    }
+
+        private static class MenuItem extends StackPane{
+            private MenuItem(String name) {
+
+                Rectangle background = new Rectangle(300,40);
+                background.setOpacity(.4);
+
+                // LIGHT GREEN MONOSPACE MENU TEXT
+                Text text = new Text(name);
+                text.setFill(Color.LIGHTGREEN);
+                text.setFont(Font.font("Monospace", FontWeight.SEMI_BOLD,30));
+
+                setAlignment(Pos.CENTER);
+                getChildren().addAll(background, text);
+
+                setOnMouseEntered(event -> {
+                    background.setFill(Color.DARKGREEN);
+                    text.setFill(Color.WHITE);
+                });
+
+                setOnMouseExited(event -> {
+                    background.setFill(Color.BLACK);
+                    text.setFill(Color.LIGHTGREEN);
+                });
+                setOnMousePressed(event -> {
+                    background.setFill(Color.LIGHTSKYBLUE);
+                    text.setFill(Color.RED);
+                });
+
+                setOnMouseReleased(event -> {
+                    background.setFill(Color.BLACK);
+                    text.setFill(Color.WHITE);
+                });
+            }
+        }
 
     public static void main(String[] args) {
         launch(args);
