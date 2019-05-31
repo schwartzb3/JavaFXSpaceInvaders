@@ -1,29 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e34ea50b-defb-4a7a-9d6a-ee159c8c8b8b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/CS257Labs/ButtonSample$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/CS257Labs/ButtonSample$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/CS257Labs/ButtonSample$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/CS257Labs/ButtonSample$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/CS257Labs/ButtonSample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/CS257Labs/HelloWorld$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/CS257Labs/HelloWorld$MenuBox.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/CS257Labs/HelloWorld$MenuItem.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/CS257Labs/HelloWorld.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/CS257Labs/WindowUI$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/CS257Labs/WindowUI$10.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/CS257Labs/WindowUI$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/CS257Labs/WindowUI$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/CS257Labs/WindowUI$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/CS257Labs/WindowUI$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/CS257Labs/WindowUI$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/CS257Labs/WindowUI$7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/CS257Labs/WindowUI$8.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/CS257Labs/WindowUI$9.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/CS257Labs/WindowUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ButtonSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ButtonSample.java" afterDir="false" />
+    <list default="true" id="e34ea50b-defb-4a7a-9d6a-ee159c8c8b8b" name="Default Changelist" comment="made some changes to the menu, hopefully this will work eventually">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS257Labs/ButtonSample$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS257Labs/ButtonSample$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS257Labs/ButtonSample$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS257Labs/ButtonSample$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS257Labs/ButtonSample$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS257Labs/ButtonSample$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS257Labs/ButtonSample.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS257Labs/ButtonSample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS257Labs/HelloWorld$MenuBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS257Labs/HelloWorld$MenuBox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS257Labs/HelloWorld$MenuItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS257Labs/HelloWorld$MenuItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CS257Labs/HelloWorld.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CS257Labs/HelloWorld.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HelloWorld.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,38 +32,12 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ButtonSample.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#576#713#0" expanded="true" />
-                <element signature="e#712#713#0" expanded="true" />
-                <element signature="e#1948#1949#0" expanded="true" />
-                <element signature="e#2006#2007#0" expanded="true" />
-                <element signature="e#2033#2034#0" expanded="true" />
-                <element signature="e#2091#2092#0" expanded="true" />
-                <element signature="e#2116#2117#0" expanded="true" />
-                <element signature="e#2174#2175#0" expanded="true" />
-                <element signature="e#2201#2202#0" expanded="true" />
-                <element signature="e#2259#2260#0" expanded="true" />
-                <element signature="e#2311#2312#0" expanded="true" />
-                <element signature="e#2339#2340#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HelloWorld.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-276">
-              <caret line="100" column="19" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
+            <state relative-caret-position="1245">
+              <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4304#4305#0" expanded="true" />
-                <element signature="e#4332#4333#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,14 +45,19 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>window</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/HelloWorld.java" />
         <option value="$PROJECT_DIR$/src/ButtonSample.java" />
+        <option value="$PROJECT_DIR$/src/HelloWorld.java" />
       </list>
     </option>
   </component>
@@ -158,7 +125,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HelloWorld">
+  <component name="RunManager" selected="Application.ButtonSample">
     <configuration name="ButtonSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ButtonSample" />
       <module name="CS257Labs" />
@@ -175,8 +142,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HelloWorld" />
         <item itemvalue="Application.ButtonSample" />
+        <item itemvalue="Application.HelloWorld" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +160,7 @@
       <workItem from="1558969795532" duration="2915000" />
       <workItem from="1559245142143" duration="12000" />
       <workItem from="1559245158325" duration="6000" />
-      <workItem from="1559250563170" duration="6612000" />
+      <workItem from="1559250563170" duration="7906000" />
     </task>
     <task id="LOCAL-00001" summary="made some changes to the menu, hopefully this will work eventually">
       <created>1559261748159</created>
@@ -206,7 +173,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9545000" />
+    <option name="totallyTimeSpent" value="10839000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -221,8 +188,8 @@
     <frame x="0" y="23" width="1280" height="733" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49863014" visible="true" weight="0.26171243" />
-      <window_info id="Structure" order="1" sideWeight="0.5020408" side_tool="true" weight="0.24959612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965197" visible="true" weight="0.26171243" />
+      <window_info id="Structure" order="1" sideWeight="0.50348026" side_tool="true" weight="0.26171243" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.50136983" side_tool="true" weight="0.24959612" />
@@ -274,22 +241,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HelloWorld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276">
-          <caret line="100" column="19" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4304#4305#0" expanded="true" />
-            <element signature="e#4332#4333#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ButtonSample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="103" column="1" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+        <state relative-caret-position="881">
+          <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#576#713#0" expanded="true" />
@@ -304,6 +259,16 @@
             <element signature="e#2259#2260#0" expanded="true" />
             <element signature="e#2311#2312#0" expanded="true" />
             <element signature="e#2339#2340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HelloWorld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
